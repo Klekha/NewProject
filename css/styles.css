@@ -1,0 +1,563 @@
+:root {
+    --first-title-color :#FFFFFF;
+    --second-title-color :#303030;
+    --first-text-color :#FFFFFF;
+    --second-text-color:rgba(157, 164, 189, 0.6);
+    --third-text-color:#9DA4BD;
+    --fouth-text-color:#303030;
+    --fifth-text-color:#555555;
+    --first-focus-color:#FF6C00;
+    --main-botton-margin:20px;
+    }
+
+/* ----------Обнуление---------- */
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+img {
+    display: block;  
+}
+
+/* ------------style------------ */
+body {
+    font-style: 'Open Sans', Tahoma, 'sans-serif';
+}
+
+button {
+    cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h5,
+h6 {
+    margin: 0;
+}
+
+
+
+ul,
+ol {
+    padding-left: 0;
+    margin: 0;
+    outline: 1px solid blue;
+}
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    outline: 1px solid red;
+}
+
+.btn {
+    min-width: 160px;
+    height: 40px;
+    font-family: inherit;
+    font-weight: 600px;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    border: 1px solid #FF6C00;
+        border-radius: 25px;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: #ff6c00;;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+
+/* ----------Header------------- */
+.header {
+    background-color: bisque;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+}
+
+.header-link {
+    margin-right: 130px;
+}
+
+.header-list {
+    display: flex;
+}
+
+.header-item {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+}
+
+.header-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.header-connect {
+    margin-left: auto;
+}
+
+.nav-link {
+    color: var(--first-text-color);
+}
+
+.header-tel {
+    font-weight: 600;
+        font-size: 12px;
+        line-height: 1.33;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--first-text-color);
+}
+
+.header-btn {
+    font-weight: 600;
+        font-size: 12px;
+        line-height: 1.33;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+        color: var(--first-text-color);
+        margin-left: 40px;
+
+}
+
+/* ---------hero-------------- */
+
+.hero{
+    background-color: #464954;
+}
+
+.hero .container {
+    display: flex;
+}
+
+.hero-list {
+    width: 100px;
+    justify-content: center;
+    margin-right: 100px;
+    background-color: aqua;
+    
+}
+
+.hero-right {
+    padding: 184px 526px 208px 100px;
+    flex-grow: 1;
+}
+
+.hero-link {
+    font-size: 11px;
+        line-height: 1.33;
+        letter-spacing: 0.2em;
+        color:var(--second-title-color);
+}
+
+.hero-top-text {
+    font-weight: 600;
+        font-size: 11px;
+        line-height: 1.36;
+        text-transform: uppercase;
+        color:var(--second-text-color);
+        margin-bottom: 20px;
+}
+
+.hero-title {
+    font-weight: 700;
+        font-size: 72px;
+        line-height: 1.18; 
+        letter-spacing: 0.05em;
+        color:var(--first-title-color);
+        margin-bottom: 20px;
+}
+
+.hero-botton-text {
+    font-weight: 400;
+        font-size: 18px;
+        line-height: 1.67;
+        letter-spacing: 0.02em;
+        color:var(--third-text-color);
+}
+
+/* ---------------------------about------------------------ */
+.about {
+    background-color: aquamarine;
+    padding-top: 120px 0px;
+    
+}
+
+.about .container {
+    display: flex;
+}
+
+.about-list {
+    display: flex;
+}
+
+.about-item:not(:last-child){
+    margin-right: 30px;
+} 
+
+.about-right {
+    margin-left: 30px;
+    width: 470px;
+
+}
+
+.about-top-text {
+    font-weight: 600;
+        font-size: 11px;
+        line-height: 1.36;
+        text-transform: uppercase;
+        color:var(--fouth-text-color);
+        margin: 0 0 20px 80px;
+        
+}
+
+
+
+.about-title {
+    font-weight: 700;
+        font-size: 42px;
+        line-height: 1.16;
+        letter-spacing: 0.05em;
+        color:var(--second-title-color);
+        margin-bottom: 20px;
+}
+
+.about-botton-text {
+    font-weight: 400;
+        font-size: 18px;
+        line-height: 1.67;
+        letter-spacing: 0.02em;
+        color:var(--fifth-text-color);
+        margin-bottom: 20px;
+}
+
+.about-second-text {
+    font-weight: 400;
+        font-size: 14px;
+        line-height: 1.86;
+        letter-spacing: 0.02em;
+        color:var(--fifth-text-color);
+        margin-bottom: 42px;
+}
+
+/* -----------price------------------------------- */
+.price {
+    padding: 120px 0px 120px 0px;
+    background-color: #FF6C00;
+}
+
+.price-top-text {
+    font-weight: 600;
+        font-size: 11px;
+        line-height: 1.36;
+        text-transform: uppercase;
+        color:var(--second-text-color);
+        margin-bottom: 20px;
+}
+
+.price-title {
+    font-weight: 700;
+        font-size: 42px;
+        line-height: 1.16;
+        letter-spacing: 0.05em;
+        color:var(--first-title-color);
+        margin-bottom: 44px;
+        
+}
+
+.prices-list-wrap {
+    display: flex;
+    gap: 30px;
+}
+
+.price-list {
+    width: 570px;
+    flex-grow: 1;
+    padding: 30px 20px ;
+    margin-bottom: 44px;
+}
+
+.price-item {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-item-elmt {
+    margin: 0;
+    font-weight: 400;
+        font-size: 18px;
+        line-height: 1.67;
+        letter-spacing: 0.02em;
+        color:var(--third-text-color);
+}
+
+.price-btn {
+    display: block;
+    margin: auto;
+}
+
+
+/* ----------------information------------------ */
+.benefits {
+    padding: 120px 0;
+}
+
+.benefits .container {
+    display: flex;
+}
+
+.benefits-list-wrap {
+    width: calc(50% + 15px);
+    display: flex;
+    justify-content: center;
+}
+
+.benefits-items {
+    background: #f7f7f7;
+    width: 170px;
+    height: 133px;
+    padding: 20px 24px;
+    text-align: center;
+}
+
+.benefits-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.benefits-items:nth-child(2n + 1) {
+    margin-right: 30px;
+}
+
+.benefits-items:nth-child(2n) {
+    margin-top: 30px;
+}
+
+.benefits-items>span {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.35;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #303030;
+    display: inline-block;
+}
+
+.benefits-items>span {
+    display: flex;
+    justify-content: center;
+}
+
+.benefits-items>span::after {
+    font-weight: 600;
+        font-size: 16px;
+        line-height: 1.37;
+        text-align: center;
+        color: #FF6C00;
+}
+
+.benefits-items>p {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: center;
+    color: #303030;
+}
+
+.benefits-wrap {
+    padding-top: 9px;
+    padding-right: 70px;
+}
+
+.benefits-pre-title {
+    font-weight: 600;
+        font-size: 11px;
+        line-height: 1.36;
+        text-transform: uppercase;
+        color: #303030;
+        padding-bottom: 20px;
+}
+
+.benefits-title {
+    font-weight: 700;
+        font-size: 42px;
+        line-height: 1.16;
+        letter-spacing: 0.05em;
+        color: #303030;
+        padding-bottom: 20px;
+}
+
+.benefits-after-title {
+    font-weight: 400;
+        font-size: 18px;
+        line-height: 1.67;
+        letter-spacing: 0.02em;
+        color: #555555;
+}
+/* -------------------masters----------------- */
+.masters {
+    padding: 120px 0px;
+}
+
+.masters-title {
+    font-weight: 700;
+        font-size: 42px;
+        line-height: 1.16;
+        letter-spacing: 0.05em;
+        color:var(--second-title-color);
+        margin-bottom: 44px;
+}
+.masters-text {
+    font-weight: 600;
+        font-size: 11px;
+        line-height: 1.36;
+        text-transform: uppercase;
+        color:var(--fouth-text-color);
+        margin-bottom: 20px;
+}
+
+
+.masters-list {
+    display: flex;
+}
+
+.masters-item:not(:last-child){
+    margin-right: 30px;
+}
+
+.masters-item {
+    width: calc ((100% - 60px) / 3);
+}
+
+
+.masters-top-text {
+    font-weight: 400;
+font-size: 18px;
+line-height: 1.38;
+text-align: center;
+letter-spacing: 0.02em;
+margin-top: 30px;
+margin-bottom: 8px;
+}
+
+.masters-botton-text {
+    font-weight: 400;
+        font-size: 14px;
+        line-height: 1.35;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color:var(--first-focus-color);
+}
+
+
+
+
+/* -----------------gallery-------------- */
+.gallery {
+    background-color: #384d42;
+    padding: 120px 0px;
+}
+
+.gallery-text {
+    font-weight: 600;
+        font-size: 11px;
+        line-height: 1.36;
+        text-transform: uppercase;
+        color:var(--fouth-text-color);
+        margin-bottom: 44px;
+}
+
+.gallery-list {
+    display: flex;
+}
+
+.gallery-item:not(:only-child) {
+    margin-right: 30px;
+}
+
+.gallery-item {
+    width: calc((100% - 90px) / 4);
+}
+/* ---------------reservetion-------------- */
+.reservetion {
+    background-color: rgb(66, 44, 44);
+    display: flex;
+}
+
+.reservetion-title {
+    font-weight: 700;
+        font-size: 42px;
+        line-height: 1.16;
+        letter-spacing: 0.05em;
+        color:var(--first-title-color);
+}
+
+.reservetion-item {
+    font-size: 18px;
+        line-height: 1.67;
+        letter-spacing: 0.02em;
+        text-decoration-line: underline;
+        color:var(--third-text-color);
+}
+
+.reservetion-top-text {
+    font-weight: 600;
+        font-size: 11px;
+        line-height: 1.36;
+        text-transform: uppercase;
+        color:var(--first-text-color);
+}
+
+.reservetion-text {
+    font-weight: 400;
+        font-size: 18px;
+        line-height: 1.67;
+        letter-spacing: 0.02em;
+        color:var(--third-text-color);
+}
+
+/* ------------------footer---------------- */
+.footer-text {
+    font-weight: 600;
+        font-size: 11px;
+        line-height: 1.36;
+        letter-spacing: 0.2em;
+        color:var(--third-text-color);
+}
+
+.footer-item {
+    font-weight: 600;
+        font-size: 11px;
+        line-height: 1.36;
+        letter-spacing: 0.2em;
+        color:var(--second-title-color);
+}
