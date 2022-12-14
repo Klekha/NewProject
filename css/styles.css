@@ -41,15 +41,10 @@ h6 {
     margin: 0;
 }
 
-div {
-    outline: 1px solid orchid;
-}
-
 ul,
 ol {
     padding-left: 0;
     margin: 0;
-    outline: 1px solid blue;
 }
 
 .container {
@@ -57,7 +52,6 @@ ol {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    outline: 1px solid red;
 }
 
 .btn {
@@ -161,11 +155,6 @@ ol {
 
 /* ---------hero-------------- */
 
-.hero{
-
-    
-}
-
 .hero .container {
     display: flex;
 }
@@ -201,6 +190,16 @@ ol {
         text-transform: uppercase;
         color:var(--second-text-color);
         margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+}
+
+.hero-top-text::before {
+    content: '';
+    width: 60px;
+    height: 1px;
+    background-color: currentColor;
+    margin-right: 20px;
 }
 
 .hero-title {
@@ -251,8 +250,18 @@ ol {
         line-height: 1.36;
         text-transform: uppercase;
         color:var(--fouth-text-color);
-        margin: 0 0 20px 80px;
+        margin: 0 0 20px 0px;
+        display: flex;
+        align-items: center;
         
+}
+
+.about-top-text::before {
+    content: '';
+    width: 60px;
+    height: 1px;
+    background-color: currentColor;
+    margin-right: 20px;
 }
 
 
@@ -307,6 +316,16 @@ ol {
         text-transform: uppercase;
         color:var(--second-text-color);
         margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+}
+
+.price-top-text::before {
+    content: '';
+    width: 60px;
+    height: 1px;
+    background-color: currentColor;
+    margin-right: 20px;
 }
 
 .price-title {
@@ -331,10 +350,33 @@ ol {
     margin-bottom: 44px;
 }
 
+.price-list:first-child {
+    background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+
+.price-list:last-child {
+    background: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
+}
+
 .price-item {
     margin: 0;
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
+    font-weight: 400;
+        font-size: 18px;
+        line-height: 1.67;
+        text-align: right;
+        letter-spacing: 0.02em;
+        color: var(--third-text-color);
+}
+
+.price-item::after {
+    content: '';
+    height: 1px;
+    background-color: var(--third-text-color);
+    flex-grow: 1;
+    margin: 0px 12px;
 }
 
 .price-item-elmt {
@@ -346,9 +388,16 @@ ol {
         color:var(--third-text-color);
 }
 
+.prices-item-elmt:not(:last-child) {
+    order: 1;
+}
+
+
 .price-btn {
     display: block;
     margin: auto;
+    background-color: transparent;
+    color: var(--first-text-color);
 }
 
 
@@ -437,6 +486,16 @@ ol {
         text-transform: uppercase;
         color: #303030;
         padding-bottom: 20px;
+        display: flex;
+        align-items: center;
+}
+
+.benefits-pre-title::before {
+    content: '';
+    width: 60px;
+    height: 1px;
+    background-color: currentColor;
+    margin-right: 20px;
 }
 
 .benefits-title {
@@ -477,6 +536,16 @@ ol {
         text-transform: uppercase;
         color:var(--fouth-text-color);
         margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+}
+
+.masters-text::before {
+    content: '';
+    width: 60px;
+    height: 1px;
+    background-color: currentColor;
+    margin-right: 20px;
 }
 
 
@@ -531,13 +600,13 @@ margin-bottom: 8px;
 
 .masters-soc-link {
     width: 100%;
-        height: 100%;
-        display: flex;
-        background-color: #fff;
-        border-radius: 50%;
-        justify-content: center;
-        align-items: center;
-        color: #000;
+    height: 100%;
+    display: flex;
+    background-color: #fff;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    color: #000;
 }
 
 .masters-soc-link:focus,
@@ -551,7 +620,6 @@ margin-bottom: 8px;
 
 /* -----------------gallery-------------- */
 .gallery {
-    background-color: #384d42;
     padding: 120px 0px;
 }
 
@@ -562,6 +630,16 @@ margin-bottom: 8px;
         text-transform: uppercase;
         color:var(--fouth-text-color);
         margin-bottom: 44px;
+        display: flex;
+        align-items: center;
+}
+
+.gallery-text::before {
+    content: '';
+    width: 60px;
+    height: 1px;
+    background-color: currentColor;
+    margin-right: 20px;
 }
 
 .gallery-list {
@@ -578,10 +656,7 @@ margin-bottom: 8px;
 /* ---------------reservetion-------------- */
 .reservetion {
     background-color: #191c26;
-    background-image: url(../image/reserv.png);
-        background-repeat: no-repeat;
-        background-size: calc(50% - 15px);
-        background-position: right;
+    background-repeat: no-repeat;
     padding-top: 130px;
     padding-bottom: 120px;
 }
@@ -614,8 +689,13 @@ margin-bottom: 8px;
 }
 
 .reservetion-right-box {
-    background-color: #191c26;
-    width: calc(50% - 15px);
+    background-image: url(../image/reserv.png);
+    height: calc(50% - 15px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
+    margin-left: 100px;
+    background-color: transparent;
     
 }
 
@@ -655,8 +735,7 @@ margin-bottom: 8px;
         font-size: 18px;
         line-height: 1.67; 
         letter-spacing: 0.02em;
-        margin-bottom: 20px;
-}
+        margin-bottom: 20px;}
 
 .reservetion-tel {
     font-weight: 400;
